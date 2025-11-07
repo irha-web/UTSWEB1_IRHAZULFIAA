@@ -28,3 +28,28 @@ $harga_barang = [5000, 12000, 8000, 6000, 20000];
     <div class="logout">
         <a href="logout.php">Logout</a>
     </div>
+
+    <?php
+    // Commit 6 – Logika Penjualan Random
+    $beli = [];
+    $jumlah = [];
+    $total = [];
+    $grandtotal = 0;
+
+    for ($i = 0; $i < 5; $i++) {
+        $beli[$i] = $nama_barang[$i];
+        $jumlah[$i] = rand(1, 5);
+        $total[$i] = $harga_barang[$i] * $jumlah[$i];
+        $grandtotal += $total[$i];
+    }
+    ?>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+        </tr>
