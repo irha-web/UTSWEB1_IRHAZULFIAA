@@ -69,3 +69,12 @@ $harga_barang = [5000, 12000, 8000, 6000, 20000];
             $no++;
         }
         ?>
+
+        <!-- Commit 8 – Output Akhir -->
+        <tr>
+            <td colspan="5"><b>Total Belanja</b></td>
+            <td><b>Rp <?= number_format($grandtotal, 0, ',', '.'); ?></b></td>
+        </tr>
+    </table>
+</body>
+</html>
