@@ -321,8 +321,7 @@ Jumlah" min="1" required>
 <td>Rp <?php echo number_format($item['harga'],0,',','.'); ?><
 /td>
 <td><?php echo htmlspecialchars($item['jumlah']); ?></td>
-<td class="right">Rp <?php echo number_format($item['
-lineTotal'],0,',','.'); ?></td>
+<td class="right">Rp <?php echo number_format($item['lineTotal'],0,',','.'); ?></td>
 </tr>
 <?php endforeach; ?>
 <tr class="total-row">
